@@ -1,22 +1,33 @@
 @charset "UTF-8";
+@import url('https://fonts.googleapis.com/css2?family=Lobster&family=PT+Sans:ital,wght@1,700&family=Passion+One&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Lobster&family=PT+Sans:ital,wght@1,700&family=Passion+One&family=Sriracha&display=swap');
 *{
     margin: 0px;
     padding: 0px;
 
 }
+:root{
+    --fonte1:verdana,Geneva,tahoma,sans-serif;
+    --fonte2:font-family: 'Passion One', cursive;
+    --fonte3:font-family: 'Sriracha', cursive;
+}
 html,body{
     min-height: 100vh;
     background-color: darkgray;
+    font-family: var(--fonte1);
 }
 header{
+    height: 200px;
     background-color: black;
     color: white;
     text-align: center;
 
+
 }
 header > h1{
-    padding-top: 50%;
-    font-variant: small-caps;
+    padding-top:8%;
+    font-variant:small-caps;
+    font-family:var(--fonte2);
 
 }
 header >p{
@@ -37,6 +48,7 @@ section{
     padding-bottom: 10%;
     line-height: 2em;
     padding-left: 30px;
+    font-family: var(--fonte3);
 }
 
 section.normal{
@@ -47,6 +59,7 @@ section.normal{
 section.imagem{
     background-color: rgb(29, 28, 28);
     color: white;
+    display: inline-block;
 }
 
 section.imagem >p{
